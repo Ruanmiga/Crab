@@ -1,26 +1,15 @@
 package com.ruanmiga.crab;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.net.MalformedURLException;
 
 /**
  *
  * @author anton
  */
-public class Crab {
+public class Crab extends HttpBase{
 
-    public static void main(String[] args) {
-        System.out.println("Hola mundo!");
-        
-        List<String> lista = new ArrayList<>();
-        lista.add("Mito");
-        lista.add("MitoCode");
-        lista.add("Code");
-        
-        lista.sort((a, b) -> a.compareTo(b));
-        
-        for(String element : lista){
-            System.out.println(element);
-        }
+    public Crab(String baseurl) throws MalformedURLException {
+        super(baseurl);
     }
+    
 }

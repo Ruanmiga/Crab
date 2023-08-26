@@ -9,6 +9,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <exec.mainClass>com.ruanmiga.crab.Crab</exec.mainClass>
+        <exec.mainClass>com.ruanmiga.crab.main</exec.mainClass>
     </properties>
 </project>

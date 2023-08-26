@@ -6,6 +6,19 @@ package com.ruanmiga.crab;
  */
 public class HttpUtils {
     
+       public static final String HTTP_PROTOCOL = "http://";
+       public static final String HTTPS_PROTOCOL = "https://";
+       
+       
+       public static int getPortFromProtocol(String protocol, int port){
+           if(port == -1){
+               if (protocol.equalsIgnoreCase("https")) {
+				return 443;
+	       }
+               return 80;
+           }
+           return port;
+       }
 	/**
 	 * Returns {@code true} if status code indicates successful result.
 	 */
