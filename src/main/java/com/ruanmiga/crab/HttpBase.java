@@ -7,7 +7,7 @@ package com.ruanmiga.crab;
 public abstract class HttpBase {
     
     protected Url url;
-    
+  
     public HttpBase(String baseurl){
         parseUrl(baseurl);
     }
@@ -76,5 +76,5 @@ public abstract class HttpBase {
     public Url getUrl() {
         return url;
     }
-
+    
 }

@@ -8,7 +8,7 @@ import java.net.MalformedURLException;
  */
 public class Crab extends HttpBase{
 
-    public Crab(String baseurl) throws MalformedURLException {
+    public Crab(String baseurl){
         super(baseurl);
     }
     
